@@ -1,0 +1,127 @@
+.register-tutor {
+  border: 1px solid #e1e1e1;
+}
+
+.register-tutor-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(117, 117, 222);
+  padding: 5px 0;
+}
+
+.register-tutor-info {
+  margin: 20px 0;
+}
+
+.form-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center; 
+}
+
+.form-group .left {
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+  align-self: flex-start;
+  padding-top: 4px;
+}
+
+.left label,
+.left span {
+  display: inline;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.left span {
+  color: red;
+}
+
+
+.form-group .right {
+  flex: 3;
+}
+
+.form-group .right {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group .right select,
+.form-group .right .form-control,
+.form-group .right textarea  {
+  width: 100%;
+  padding: 4px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.form-group .right p {
+  margin-right: 120px;
+  padding-top: 6px;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.register-tutor .form-group button {
+  background-color: tomato;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  transform: background-color 0.3s, opacity 0.3s;
+}
+
+.register-tutor .form-group button:hover {
+  background-color: rgb(213, 45, 15);
+  opacity: 0.8;
+}
+
+
+
+.form-group .right table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table-box td {
+  border: #777070 solid 1px;
+  padding: 6px;
+  /* vertical-align: top; */
+}
+
+.table-box input[type="checkbox"] {
+  margin-right: 4px;
+}
+
+.table-box label {
+  /* white-space: nowrap; */
+}
+
+
+
+
+
+
+ 

@@ -1,0 +1,52 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  perspective: 1000px; /* Tạo hiệu ứng 3D */
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.banner-left {
+  background-color: red;
+  width: 100%;
+  height: 300px;
+}
+          
+.banner-right {
+  background-color: blue;
+  width: 100%;
+  height: 300px;
+}
+
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(0); /* Tạo hiệu ứng 3D */
+}
+
+.banner-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateZ(50px); /* Tạo hiệu ứng 3D và dịch chuyển lên phía trước */
+  color: white;
+  max-width: 600px;
+  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: rgb(125, 198, 72);
+}
+
+.banner-content p {
+  font-size: 20px;
+  line-height: 1.5;
+}

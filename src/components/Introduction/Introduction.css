@@ -1,0 +1,45 @@
+.introduction {
+  /* border: 1px solid #e1e1e1; */
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px;
+  margin-bottom: 30px; */
+  margin-top: 30px;
+}
+
+.introduction-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(117, 117, 222);
+  padding: 5px 0;
+}
+
+.introduction-paragh {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.introduction-paragh p {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.introduction button {
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  background-color: red;
+  border: 1px solid red;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.introduction button:hover {
+  background-color: rgb(215, 35, 35);
+}

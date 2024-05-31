@@ -1,0 +1,130 @@
+.signup-user {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000090;
+
+  display: grid;
+  inset: 0;
+  place-items: center;
+
+}
+
+.signup-user-container {
+  place-self: center;
+  /* width: max(23vw, 330px); */
+  width: max(23vw, 400px);
+  color: #808080;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  /* position: fixed; */
+  
+}
+
+.signup-container input {
+  font-size: 20px;
+}
+
+.signup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.signup-title .icon-close {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+
+.signup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.signup-inputs input {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.password-input-container input {
+  width: 100%;
+}
+
+
+/* input[type="password"] {
+  padding-right: 40px;
+} */
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: rgb(218, 51, 51);
+  cursor: pointer;
+}
+
+
+
+.signup-button-container button {
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: #0866ff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transform: background-color 0.15s, opacity 0.15s;
+}
+
+.signup-button-container button:hover {
+  background-color: #1a68e5;
+  opacity: 0.9;
+}
+
+.signup-condition {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.signup-condition input {
+  margin-top: 3px;
+}
+
+.signup-button-container .parah {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.signup-button-container .parah span {
+  margin-left: 5px;
+  font-size:18px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: tomato;
+}

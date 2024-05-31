@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Banner from './components/Banner/Banner';
+import CourseList from './components/CourseList/CourseList';
+import RecommendedCourses from './components/RecommendedCourses/RecommendedCourses';
+import RecommendedTutors from './components/RecommendedTutors/RecommendedTutors';
+import Footer from './components/Footer/Footer';
+import Body from './components/Body/Body';
+import { useState } from 'react';
+import LoginUser from './components/LoginUser/LoginUser';
+import SignUpUser from './components/SignUpUser/SignUpUser';
 
 function App() {
+  const [isLoginUser, setIsLoginUser] = useState(false);
+  const [isSignUpUser, setIsSignUpUser] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    {isLoginUser ? <LoginUser setIsLoginUser={setIsLoginUser} /> : <></>}
+    {isSignUpUser ? <SignUpUser setIsSignUpUser={setIsSignUpUser} /> : <></>}
+    <div className='app'>
+      <Navbar  setIsLoginUser={setIsLoginUser}
+               setIsSignUpUser={setIsSignUpUser}/>
+      <Banner />
+      {/* <CourseList/>
+      <RecommendedTutors />
+      <RecommendedCourses/> */}
+      <Body />
     </div>
+    <Footer />
+   </>
   );
 }
 

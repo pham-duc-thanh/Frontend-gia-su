@@ -1,0 +1,49 @@
+.tuition-price-list {
+  /* border: 1px solid #e1e1e1; */
+  /* border-bottom: 1px solid #e1e1e1; */
+  margin-top: 30px;
+}
+
+.tuition-price-list-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(117, 117, 222);
+  padding: 5px 0;
+}
+
+.tuition-price-list-body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tuition-price-list-body p {
+  color: blue;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.table-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.table-list table {
+  width: 60vw;
+  height: 15vw;
+  border-collapse: collapse;
+  /* border: 1px solid black; */
+  font-weight: 500;
+}
+
+
+
+.table-list table,tr,td {
+  border: 1px solid black;
+}

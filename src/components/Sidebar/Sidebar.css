@@ -1,0 +1,51 @@
+.sidebar {
+  width: 20%;
+  float: left;
+  background-color: #008489;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-list {
+  border: 2px solid rgb(53, 47, 47);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.sidebar-list h3 {
+  height: 30px;
+  line-height: 30px;
+  background: linear-gradient(to right, #f28c12, #d95b0b); /* Gradient màu nền */
+  text-align: center;
+  font-size: 18px;
+  color: #fff; /* Màu chữ trắng */
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Hiệu ứng shadow */
+}
+
+.sidebar-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-menu li {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  color: #fff; /* Màu chữ trắng */
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 1px solid white;
+  padding-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sidebar-menu li:hover {
+  background-color: #2116b9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Hiệu ứng shadow */
+  transform: translateX(3px); /* Hiệu ứng dịch chuyển */
+}

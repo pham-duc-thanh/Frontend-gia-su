@@ -1,0 +1,18 @@
+.course-list {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.course-list h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.course-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.course-list li {
+  margin-bottom: 8px;
+}

@@ -1,0 +1,17 @@
+.content-default {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content-default-item {
+  border: 1px solid #e1e1e1;
+}
+
+.content-default-item h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(117, 117, 222);
+  padding: 5px 0;
+}

@@ -1,0 +1,148 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #102dcd;
+  color: #ffffff; 
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.logo {
+  height: 50px;
+  padding-left: 10px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  display: flex;
+  font-size: 18px;
+  gap: 20px;
+}
+
+.navbar .navbar-menu li {
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.navbar-menu li:hover {
+  /* transform: scale(1.1); */
+  background-color: #102597;
+  color: rgb(188, 152, 152);
+}
+
+.navbar .active {
+  /* padding-bottom: 2px;
+  border-bottom: 2px solid white; */
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right button {
+  margin-right: 10px;
+  padding: 8px 8px;
+  background-color: white;
+  color: black;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar-right button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.navbar-menu .submenu ul {
+  position: absolute;
+  background-color: whitesmoke;
+  list-style-type: none;
+  top: 62px;
+  left: 0px;
+  width: 250px;
+  animation: headerNotifyGrowth ease-in 0.2s;
+  will-change: opacity, transform;
+  border: 1px solid #D3D3D3;
+  display: none;
+}
+
+.navbar-menu .submenu ul li {
+  padding: 10px;
+  color: black;
+  border-bottom: 1px solid rgb(182, 169, 169);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navbar-menu .submenu ul li:first-child{
+  border-top: 2px solid black;
+}
+
+.navbar-menu .submenu ul li:last-child {
+  border-bottom: 2px solid black;
+}
+
+.navbar-menu li:hover .submenu ul {
+  display: block;
+}
+
+/* .navbar-menu .submenu::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  width: 150px;
+  height: 12px;
+  background-color: red;
+} */
+
+@keyframes headerNotifyGrowth {
+  from {
+      transform: scale(0);
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
+.navbar-menu .submenu ul li:hover {
+  background-color: yellowgreen;
+}
+
+
+.register-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+    
+  padding: 10px;
+  list-style-type: none;
+  margin: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.register-options li {
+  padding: 5px;
+}
+
+
+
